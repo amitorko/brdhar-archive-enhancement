@@ -1,6 +1,4 @@
-# Writing the README.md content into a file.
 
-readme_content = """
 # brdhar-archive-enhancement
 
 This repository contains all the necessary code and documentation for enhancing the archive section of the BRDHAR website. The project is structured into several phases, with this repository focusing on Phase 1: Planning & Initial Setup.
