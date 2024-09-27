@@ -11,7 +11,6 @@ The objective of this phase is to lay down a robust foundation for the redevelop
 
 - Analyze current website interactions and performance.
 - Wireframe new archive layout.
-- Set up a Python development environment for web development.
 - Plan and document the architectural changes, including database and API.
 - Establish version control and set up local development servers.
 

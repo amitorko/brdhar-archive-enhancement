@@ -25,5 +25,24 @@ def scrape_data():
 
     print('Webpage data has been written to CSV.')
 
+def parse_log_file(log_file_path):
+    
+    logs = []
+    with open(log_file_path, 'r') as file:
+        for line in file:
+            parts = line.split()  
+            if len(parts) > 9:  # Simple check to avoid malformed lines
+                log_entry = {
+                    'ip': parts[0],
+                    'datetime': parts[3] + parts[4],
+                    'request': parts[5] + ' ' + parts[6] + ' ' + parts[7],
+                    'status': parts[8],
+                    'size': parts[9],
+                }
+                logs.append(log_entry)
+    return logs
+
+
 if __name__ == "__main__":
     scrape_data()
+    
